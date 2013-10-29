@@ -1,0 +1,18 @@
+inherit ocaml
+
+NAME="ocaml-voaacenc"
+VERSION=0.1.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml AAC encoder bindings"
+DESCRIPTION="This package contains an OCaml interface for the Google Android
+AAC audio encoder, otherwise known as libvo-aacenc."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
