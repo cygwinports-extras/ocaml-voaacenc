@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-voaacenc"
 VERSION=0.1.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="OCaml AAC encoder bindings"
 DESCRIPTION="This package contains an OCaml interface for the Google Android
